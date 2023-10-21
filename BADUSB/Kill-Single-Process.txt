@@ -19,21 +19,25 @@ STRING taskmgr
 ENTER
 DELAY 500
 
-REM Goto search bar
+REM Head to TaskManager Details
 TAB
 DELAY 500
-TAB
+DOWNARROW
 DELAY 500
-TAB
+DOWNARROW
 DELAY 500
-TAB
+DOWNARROW
 DELAY 500
-
-REM Replace [process name] with what you want to end task.
-STRING [process name]
+DOWNARROW
+DELAY 500
+DOWNARROW
+DELAY 500
+DOWNARROW
 DELAY 500
 ENTER
 DELAY 500
+
+REM Go to Search Bar
 TAB
 DELAY 500
 TAB
@@ -43,16 +47,28 @@ DELAY 500
 TAB
 DELAY 500
 
-REM Open the menu and close it ending the task
+
+REM Write the process name, then head to process
+STRING msedge.exe 
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+
+REM Close process
 SHIFT F10
 DELAY 500
 DOWNARROW
 DELAY 500
-DOWNARROW
-DELAY 500
-DOWNARROW
 ENTER
 DELAY 500
+ENTER
+DELAY 1000
 
 REM Close the task manager
 ALT F4
