@@ -48,8 +48,8 @@ TAB
 DELAY 500
 
 
-REM Write the process name, then head to process
-STRING msedge.exe 
+REM Write the Task name, then head to said task
+STRING [task.exe] 
 DELAY 500
 TAB
 DELAY 500
