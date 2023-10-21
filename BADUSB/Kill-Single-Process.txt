@@ -1,0 +1,58 @@
+
+REM #####################################################
+REM #                                                   |
+REM # Title        : Stop A Single Process In Windows   |
+REM # Credits to   : Aleff                              |
+REM # Modify By	   : Alex                               |
+REM # Version      : 1.1                                |
+REM # Category     : Execution                          |
+REM # Target       : Windows 10/11                      |
+REM # Tested on    : Windows 11                         |
+REM #                                                   |
+REM #####################################################
+
+
+REM Open Task Manager
+GUI R
+DELAY 500
+STRING taskmgr
+ENTER
+DELAY 500
+
+REM Goto search bar
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+
+REM Write the process name
+STRING msteams
+DELAY 500
+ENTER
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+
+REM Open the menu and close it ending the task
+SHIFT F10
+DELAY 500
+DOWNARROW
+DELAY 500
+DOWNARROW
+DELAY 500
+DOWNARROW
+ENTER
+DELAY 500
+
+REM Close the task manager
+ALT F4
