@@ -29,8 +29,8 @@ DELAY 500
 TAB
 DELAY 500
 
-REM Write the process name
-STRING msteams
+REM Replace [process name] with what you want to end task.
+STRING [process name]
 DELAY 500
 ENTER
 DELAY 500
