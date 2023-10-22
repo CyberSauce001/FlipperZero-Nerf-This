@@ -1,6 +1,6 @@
 # Killing a Single Process Event for Windows 10/11
 
-Credits to Alessandro Greco aka Aleff.
+Credits to [Aleff](https://github.com/aleff-github)
 
 Script is modified by me, to make sure that it is working as intended, as it did not execute properly for Windows 11.<br>
 Make sure to modify Line 52 for Kill-Single-Process.txt to the task you want to close. Example msedge.exe.<br>
