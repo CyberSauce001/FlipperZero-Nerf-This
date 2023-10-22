@@ -17,6 +17,6 @@ Make sure to modify Line 24 for Kill-AllTargeted-Process.txt to the task you wan
 Windows 11 - Successful<br>
 Window 10 testing is in progress.
 
-----------------------------------------------------------------
+----------------------------------------------------------
 This project is for educational purposes only! I will not be held responsible for any damage that may occur as a result of your use of these scripts and/or modification to it.<br>
 In case the script does not work, please feel free to reach out to me and let me know. 
