@@ -1,0 +1,30 @@
+
+REM #########################################################
+REM #                                                       |
+REM # Title        : Kill All-Targeted Process In Windows   |
+REM # Created by   : Alex                                   |
+REM # Version      : 1.0                                    |
+REM # Category     : Execution                              |
+REM # Target       : Windows 10/11                          |
+REM # Tested on    : Windows 11                             |
+REM #                                                       |
+REM #########################################################
+
+
+REM Open Task Manager
+GUI R
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+
+REM Type the process you wish to close
+REM Replace [process.exe] with the exe you want to close
+REM tasklist if you want to know all the task process
+STRING taskkill /f /im [xxx.exe]
+DELAY 500
+ENTER
+DELAY 1000
+
+REM Exit out of Command Prompt
+ALT F4
