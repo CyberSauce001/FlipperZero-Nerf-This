@@ -1,7 +1,7 @@
 REM #####################################################
 REM #                                                   |
 REM # Title        : Loop                               |
-REM # Written By	 : CyberSauce                         |
+REM # Written By	 : CyberSauce                   |
 REM # Version      : 1.1                                |
 REM # Category     : Execution                          |
 REM # Target       : Windows 10/11                      |
