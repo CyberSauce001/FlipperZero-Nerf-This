@@ -2,7 +2,7 @@
 REM #########################################################
 REM #                                                       |
 REM # Title        : Kill All-Targeted Process In Windows   |
-REM # Created by   : Alex                                   |
+REM # Created by   : CyberSauce                             |
 REM # Version      : 1.0                                    |
 REM # Category     : Execution                              |
 REM # Target       : Windows 10/11                          |
