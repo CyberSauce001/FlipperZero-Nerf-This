@@ -17,6 +17,10 @@ it will create an annoying pop-up that can't be rid of unless they end the task 
 -Rename your vbs file to whatever you want<br>
 -Time is in Milliseconds: 1000 = 1 second
 
+*If you want to run the script on startup rename the file path on line 20*
+```html
+"C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\cybersauce.vbs"
+```
 -------------------------------------
 Windows 11 - Successful<br>
 Window 10 testing is in progress.
