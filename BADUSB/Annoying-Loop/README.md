@@ -17,7 +17,7 @@ it will create an annoying pop-up that can't be rid of unless they end the task 
 -Rename your vbs file to whatever you want<br>
 -Time is in Milliseconds: 1000 = 1 second
 
-*If you want to run the script on startup rename the file path on line 20*
+*If you want to run the script on startup rename the file path on line 20, you can REM or delete line 18 & 19*
 ```html
 "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\cybersauce.vbs"
 ```
