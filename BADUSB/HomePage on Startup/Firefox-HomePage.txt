@@ -1,0 +1,22 @@
+REM #####################################################
+REM #                                                   |
+REM # Title        : HomePage onStartup                 |
+REM # Written By   : CyberSauce                         |
+REM # Version      : 1.0                                |
+REM # Category     : Execution                          |
+REM # Target       : Windows 11 - Firefox               |
+REM #                                                   |
+REM #####################################################
+
+DEFAULT_DELAY 1200
+GUI r	
+STRING firefox.exe
+ENTER
+ALT D
+STRING about:preferences#home
+ENTER
+TAB
+DOWN
+TAB
+STRING https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ALT F4
