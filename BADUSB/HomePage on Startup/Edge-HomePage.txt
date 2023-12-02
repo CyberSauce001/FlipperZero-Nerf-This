@@ -1,0 +1,34 @@
+REM #####################################################
+REM #                                                   |
+REM # Title        : HomePage onStartup                 |
+REM # Written By   : CyberSauce                         |
+REM # Version      : 1.0                                |
+REM # Category     : Execution                          |
+REM # Target       : Windows 11 - Edge                  |
+REM #                                                   |
+REM #####################################################
+
+DEFAULT_DELAY 1200
+GUI r	
+STRING msedge.exe
+ENTER
+ALT D
+STRING edge://settings/startHomeNTP
+ENTER
+TAB
+DOWN
+DOWN
+TAB
+ENTER
+STRING https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ENTER
+TAB
+TAB
+TAB
+TAB
+DOWN
+TAB
+STRING https://www.youtube.com/watch?v=dQw4w9WgXcQ
+TAB
+ENTER
+ALT F4
