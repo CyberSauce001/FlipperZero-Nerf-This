@@ -1,0 +1,27 @@
+REM #####################################################
+REM #                                                   |
+REM # Title        : HomePage onStartup                 |
+REM # Written By   : CyberSauce                         |
+REM # Version      : 1.0                                |
+REM # Category     : Execution                          |
+REM # Target       : Windows 11 - Chrome                |
+REM #                                                   |
+REM #####################################################
+
+DEFAULT_DELAY 1000
+GUI r
+STRING chrome.exe
+ENTER
+ALT D
+STRING chrome://settings/onStartup
+ENTER
+TAB
+TAB
+TAB
+DOWN
+DOWN
+TAB
+ENTER
+STRING hhttps://www.youtube.com/watch?v=dQw4w9WgXcQ
+ENTER
+CTRL W
